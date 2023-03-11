@@ -1,0 +1,33 @@
+.about-section{
+  @apply bg-[#E8EFF0] lg:pb-[230px] pb-[130px] dark:bg-[#2c3556];
+  .section-title{
+    @apply before:bg-[#CCCCCC];
+    h2{
+      @apply bg-[#E8EFF0] dark:bg-[#2c3556] border-[#CCCCCC];
+    }
+    svg{
+      @apply bg-[#E8EFF0] dark:bg-[#2c3556] border-[#CCCCCC];
+    }
+  }
+  &__row{
+    @apply flex flex-col lg:flex-row items-center;
+  }
+  &__info{
+    @apply lg:w-1/2 pr-12 lg:pb-0 pb-8;
+    span{
+      @apply text-[#FF774C] font-bold text-xl;
+    }
+  }
+  &__image{
+    @apply relative;
+  }
+  &__btn{
+    @apply lg:w-[240px] w-[180px] lg:h-[240px] h-[180px] absolute bottom-0 right-[14px] translate-y-1/2 bg-[#E8EFF0] rounded-full p-4 dark:bg-[#2c3556];
+    .btn__down{
+      @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 filter-none dark:filter invert sepia;
+    }
+    .btn__scroll-text{
+      @apply relative animate-spin-slow filter-none dark:filter invert sepia;
+    }
+  }
+}

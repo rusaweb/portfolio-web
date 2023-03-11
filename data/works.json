@@ -1,0 +1,57 @@
+[
+    {
+        "slug": "black-and-white",
+        "name": "Black and White",
+        "ext": "Dry cleaning in Tashkent Clean carpets in every home! We use modern, high-tech equipment and professional, hypoallergenic detergents.",
+        "colors": ["#1f2937", "#ebeef2"],
+        "tags": [
+            "Front-end",
+            "Rest API",
+            "Vue.js v3"
+        ],
+        "cover": "https://i.ibb.co/x5wxNJT/B-W-cover.png",
+        "images": [
+            "https://i.ibb.co/KNwqgq7/B-W-auth.png",
+            "https://i.ibb.co/3mLYCxg/B-W-profile.png",
+            "https://i.ibb.co/PF8L7Lm/B-W-statistics.png",
+            "https://i.ibb.co/CsFbFLK/B-W-scan.png",
+            "https://i.ibb.co/ckGN8gm/B-W-order.png",
+            "https://i.ibb.co/FYFwY9H/B-W-order-item.png"
+        ],
+        "project_summary": {
+            "content": ""
+        },
+        "project_details": {
+            "role": "Front-end developer, Project Manager",
+            "duration": "05 Oct, 2022 - 28 Feb, 2023 (5 weeks)",
+            "link": "https://megakassa.uz/",
+            "tools": "One UI, Bootstrap, Vue"
+        },
+        "team_members": [
+            {
+                "avatar": "https://lh3.googleusercontent.com/a/AGNmyxaWB2Uoo-8aeY-yWow0M4OoyPgeYfuo3LWC0P7eXg=s288",
+                "name": "Ruslan Kurbanbaev",
+                "role": "Front-end"
+            },
+            {
+                "avatar": "https://secure.gravatar.com/avatar/9ef207e50bf01492639c6d72332b65f0?s=800&d=identicon",
+                "name": "Zokir Hal",
+                "role": "Project Manager"
+            },
+            {
+                "avatar": "https://gitlab.com/uploads/-/system/user/avatar/8117103/avatar.png?width=400",
+                "name": "Nikita Ivchenko",
+                "role": "Back-end"
+            }
+        ],
+        "problem": [
+            {
+                "name": "Disign",
+                "content": ""
+            }
+        ],
+        "solution": {
+            "content": ""
+        }
+    }
+]

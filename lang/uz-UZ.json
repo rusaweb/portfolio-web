@@ -1,0 +1,34 @@
+{
+    "navbar": {
+        "link_1": "Bosh sahifa",
+        "link_2": "Ishlarim",
+        "link_3": "Men haqimda",
+        "link_4": "Blog"
+    },
+    "color_mode": {
+        "item_1": "Tun",
+        "item_2": "Kun",
+        "item_3": "Sistemali"
+    },
+    "first_screen": {
+        "title": "Salom, men Ruslanman!",
+        "subtitle": "",
+        "years": " yillik tajribaga ega <br> <strong>Front-end dasturchi</strong>"
+    },
+    "work": "Ishlarim",
+    "about": {
+        "title":"Men haqimda",
+        "content": "Men <strong>Front-end dasturchi</strong> man. Oxirgi 5+ yil davomida sifatli veb-ilovalarni yaratganman, foydalanuvchi ehtiyojlari bilan biznes maqsadlarini bog'laganman. Lending, CRM, ORM, market place yaratganman <br> <br> Hozirda men <strong>team leader</strong> man, jamoa ishini mijozning manfaatlari va ustuvorliklarini hisobga olgan holda tashkil qilaman. <br> <br> Men mahsulot biznes manfaatlariga javob berishini ta'minlayman, biznes-jarayonlar kontekstida jamoaning samaradorligini nazorat qilaman <br> <br> Ilgari <strong><a href='https://credo-studio.com/' target='_blank'>Credo studio</a></strong>, <strong><a href='https://www.viento.uz/' target='_blank'> Viento</a></strong>va freelanceda da ishlaganman"
+    },
+    "services": {
+        "title": "Xizmatlar"
+    },
+    "testimonials": {
+        "title": "SHARHLAR",
+        "subtitle": "Odamlar mening ishim haqida nima deyishadi"
+    },
+    "news": {
+        "title": "oxirgi yangiliklar",
+        "btn": "Ko‘rish"
+    }
+}

@@ -1,0 +1,30 @@
+.skills{
+    @apply mt-20;
+    &__section{
+        @apply lg:px-14 lg:py-16 md:p-8 p-4 bg-[#F5F5F5] dark:bg-[#242F65] grid xl:grid-cols-2 rounded-2xl;
+    }
+    &__section-item{
+        @apply xl:border-r xl:border-[#AEAEAE] last:border-none xl:last:pl-12 max-xl:mb-12 last:mb-0;
+
+        h3{
+            @apply flex items-center mb-6 font-['Fraunces'] text-[#242F65] dark:text-amber-50 text-xl;
+            svg{
+                @apply mr-3 text-4xl;
+            }
+        }
+        ul{
+            li{
+                @apply text-lg mb-4 flex items-start;
+                svg{
+                    @apply text-xl mt-1 mr-2 text-[#7390F9] flex-shrink-0;
+                }
+            }
+        }
+    }
+    &__section-item__list{
+        @apply md:flex justify-between;
+        ul{
+            @apply max-xl:w-1/2 max-md:w-full
+        }
+    }
+}

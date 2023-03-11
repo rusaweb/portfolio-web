@@ -1,0 +1,27 @@
+.inner-page__solution{
+    &-content{
+        @apply xl:px-24 xl:py-28 lg:p-16 sm:p-8 p-4 flex max-lg:flex-col bg-[#EFEFEF] dark:bg-[#242F65] rounded-2xl items-center;
+    }
+    &-info{
+        @apply lg:pr-8;
+        h2{
+            @apply text-3xl font-semibold font-['Fraunces'] text-[#242F65] dark:text-amber-50 mb-8 flex items-center;
+            svg{
+                @apply ml-2;
+            }
+        }
+        
+    }
+    &-text{
+        @apply text-xl;
+        strong{
+            @apply text-[22px];
+        }
+    }
+    &-image{
+        @apply lg:max-w-[500px] sm:max-w-xs max-w-full max-lg:mt-8 w-full flex-shrink-0;
+        img{
+            @apply w-full;
+        }
+    }
+}

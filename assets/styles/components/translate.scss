@@ -1,0 +1,12 @@
+.translate{
+    @apply flex items-center ml-auto mr-6;
+    @media (max-width: 976px){
+        @apply ml-0 w-full mr-0 border-b px-8 py-4
+    }
+    &__current{
+        @apply flex items-center cursor-pointer dark:text-amber-50 text-[#2F2F2F] xl:text-xl lg:text-base xl:mx-7 lg:mx-5;
+        @media (max-width: 976px){
+            @apply w-full text-xl
+        }
+    }
+}

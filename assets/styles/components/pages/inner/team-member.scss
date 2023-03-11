@@ -1,0 +1,27 @@
+.inner-page__team-member{
+    @apply lg:mb-28 md:mb-12 mb-8;
+    &__content{
+        @apply flex max-lg:flex-col items-center md:py-12 md:px-10 sm:p-8 p-4 border border-[#D3D3D3] rounded-2xl;
+        h2{
+            @apply text-3xl font-semibold font-['Fraunces'] text-[#242F65] dark:text-amber-50 lg:mr-16 max-lg:mb-8 whitespace-nowrap;
+        }
+    }
+    &__list{
+        @apply flex justify-around w-full max-lg:flex-wrap lg:gap-12;
+    }
+    &__item{
+        @apply max-lg:w-1/2 max-lg:mb-8 max-sm:w-full;
+        .member-item__image{
+            @apply w-32 h-32 rounded-full overflow-hidden mb-3 mx-auto;
+            img{
+                @apply w-full h-full object-cover;
+            }
+        }
+        .member-item__name{
+            @apply font-['Fraunces'] text-[#242F65] dark:text-amber-50 text-xl mb-2 text-center;
+        }
+        .member-item__role{
+            @apply font-medium text-lg text-center
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.footer {
+    @apply w-full bg-[url("@/assets/images/bg/footer.jpg")] dark:bg-[url("@/assets/images/bg/footer-black.jpg")] mt-32;
+
+    &-top {
+        @apply md:py-[100px] py-10 border-b border-b-[#D092BA];
+        #marquee-slider div{
+            @apply flex items-center text-5xl text-[#242F65] dark:text-amber-50 whitespace-nowrap w-full;
+            svg{
+                @apply mr-4;
+            }
+        }
+    }
+
+    &-btn {
+        @apply relative mx-auto block mb-14;
+
+        .btn__down {
+            @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 filter-none dark:filter invert sepia;
+        }
+
+        .btn__scroll-text {
+            @apply relative animate-spin-slow filter-none dark:filter invert sepia;
+        }
+    }
+    &__nav{
+        @apply flex md:flex-row flex-col items-center justify-between md:py-24 py-8;
+        nav{
+            ul{
+                @apply grid grid-cols-2 gap-8;
+                li{
+                    a{
+                        @apply text-[#242F65] text-2xl dark:text-amber-50;
+                        font-family: 'Fraunces', serif;
+                    }
+                }
+            }
+        }
+    }
+    &__email{
+        @apply md:p-9 p-4 md:mt-0 mt-5 xl:flex items-center bg-white rounded-xl text-[#242F65] text-2xl max-lg:w-1/2 max-md:w-full;
+        font-family: 'Fraunces', serif;
+        button{
+            @apply flex items-center md:text-lg text-base text-white bg-[#242F65] md:px-7 px-4 md:py-4 py-2 rounded-xl xl:ml-14 mt-6 xl:mt-0;
+            svg{
+                @apply mr-3 text-[#FF774C] w-6 h-6
+            }
+        }
+    }
+    &__copyright{
+        @apply flex items-center w-full justify-center text-xl text-[#242F65] dark:text-amber-50 p-5 border-t border-t-[#D092BA];
+    }
+}

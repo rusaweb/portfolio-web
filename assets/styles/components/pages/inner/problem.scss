@@ -1,0 +1,45 @@
+.inner-page__problem{
+    @apply lg:mb-28 md:mb-12 mb-8;
+    &-content{
+        @apply xl:px-24 xl:py-28 lg:p-16 sm:p-8 p-4 flex bg-[#2A2C32] rounded-2xl text-white;
+    }
+    &-info{
+        @apply lg:pr-8;
+        h2{
+            @apply text-3xl font-semibold font-['Fraunces'] mb-8 flex items-center;
+            svg{
+                @apply ml-2;
+            }
+        }
+        .tabs{
+            @apply flex max-lg:flex-wrap gap-2.5 mb-6;
+            button{
+                @apply xl:px-8 xl:py-5 px-4 py-2 border border-[#3E3F43] rounded-xl;
+                &.active{
+                    @apply bg-[#3E3F43]
+                }
+            }
+            &__content{
+                @apply flex xl:w-[600px] w-full h-full relative overflow-hidden;
+                p{
+                    @apply text-xl;
+                    strong{
+                        @apply text-[22px];
+                    }
+                }
+            }
+            &__item{
+                @apply xl:w-[600px] w-full flex-shrink-0 transition-all translate-x-full absolute top-0 left-0 z-10;
+                &.active{
+                    @apply translate-x-0 relative;
+                }
+            }
+        }
+    }
+    &-image{
+        @apply max-w-[390px] w-full max-lg:hidden;
+        img{
+            @apply w-full;
+        }
+    }
+}

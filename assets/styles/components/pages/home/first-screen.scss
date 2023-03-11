@@ -1,0 +1,31 @@
+.first__screen{
+  @apply lg:h-[942px] lg:p-0 py-24 flex items-center justify-center flex-col rounded-3xl bg-[url("@/assets/images/bg/footer.jpg")] dark:bg-[url("@/assets/images/bg/footer-black.jpg")] bg-no-repeat;
+  &-title{
+    font-family: 'Fraunces', serif;
+    @apply flex lg:text-8xl md:text-6xl text-3xl mb-4 dark:text-amber-50;
+    svg{
+      @apply md:w-[67px] md:h-[84px] w-8 h-11;
+    }
+  }
+  &-content{
+    @apply lg:text-5xl text-3xl mb-20 text-center leading-tight text-[#242F65] dark:text-amber-50;
+    strong{
+      @apply font-extrabold text-[#FF774C] mb-20;
+    }
+    .years{
+      @apply inline-flex font-medium lg:text-4xl text-2xl  px-4 text-white py-2 bg-[#242F65] rounded-full;
+      svg{
+        @apply ml-2
+      }
+    }
+  }
+  &-btn{
+    @apply relative;
+    .btn__down{
+      @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 filter-none dark:filter invert sepia;
+    }
+    .btn__scroll-text{
+      @apply relative animate-spin-slow filter-none dark:filter invert sepia;
+    }
+  }
+}

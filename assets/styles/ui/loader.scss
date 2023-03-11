@@ -1,0 +1,60 @@
+.loader {
+    @apply bg-amber-50 text-amber-50 dark:bg-[#2F2F2F] dark:text-[#2F2F2F] fixed top-0 left-0 w-full h-full flex items-center justify-center z-50;
+    span {
+        @apply font-['Fraunces'] text-9xl font-extrabold uppercase inline-block;
+        animation: move 1.5s ease-in-out infinite;
+        &:nth-child(2) {
+            animation-delay: 0.25s;
+        }
+        &:nth-child(3) {
+            animation-delay: 0.5s;
+        }
+        &:nth-child(4) {
+            animation-delay: 0.75s;
+        }
+        &:nth-child(5) {
+            animation-delay: 1s;
+        }
+        &:nth-child(6) {
+            animation-delay: 1.25s;
+        }
+        &:nth-child(7) {
+            animation-delay: 1.5s;
+        }
+    }
+    
+}
+
+@keyframes move {
+    0% {
+        transform: translate(-30%, 0);
+    }
+
+    50% {
+        @apply [text-shadow:0_25px_50px_rgba(0,0,0,0.75)];
+    }
+
+    100% {
+        transform: translate(30%, 0);
+    }
+}
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+

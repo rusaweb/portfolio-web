@@ -1,0 +1,40 @@
+.testimonials-sections {
+    &__content{
+        @apply bg-[#FFF4F0] dark:bg-[#3C4345] md:px-[90px] md:py-[150px] p-8 rounded-2xl;
+        h2{
+            @apply md:text-4xl text-2xl text-[#242F65] dark:text-amber-50 font-semibold mb-16;
+            font-family: 'Fraunces', serif;
+        }
+    }
+    &__card {
+        @apply sm:mb-12 mb-8 sm:after:mt-11 after:mt-8 after:w-4/5 after:h-[1px] after:bg-[#D0A798] after:block;
+    }
+
+    &__item {
+        @apply flex items-center md:mb-1 mb-4;
+    }
+
+    &__item-image {
+        @apply md:w-[90px] w-[50px] md:h-[90px] h-[50px] md:p-5 flex-shrink-0 mr-6;
+
+        &.avatar-image{
+            @apply md:w-[90px] w-[50px] md:h-[90px] h-[50px] p-0 rounded-full outline outline-4 outline-white bg-white overflow-hidden
+        }
+
+        img {
+            @apply w-full h-full object-cover;
+        }
+    }
+
+    &__item-text {
+        @apply sm:text-xl text-base font-normal;
+        font-family: 'Fraunces', serif;
+        h3{
+            @apply text-[#242F65] mb-1 sm:text-2xl text-lg dark:text-amber-50;
+        }
+        p{
+            @apply sm:text-xl text-base;
+            font-family: 'Mulish', sans-serif;
+        }
+    }
+}

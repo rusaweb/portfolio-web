@@ -1,0 +1,46 @@
+.about-me {
+    &__section {
+        @apply flex xl:flex-row flex-col items-center bg-no-repeat bg-[url("@/assets/images/bg/footer.jpg")] dark:bg-[url("@/assets/images/bg/footer-black.jpg")] xl:p-36 lg:p-12 md:p-8 p-4 pb-8 rounded-2xl overflow-hidden bg-cover;
+    }
+
+    &__image {
+        @apply xl:mr-12 max-xl:mb-12 xl:max-w-[500px] max-w-full bg-gradient-to-br from-[#cacfd3] to-[#adaeb3] w-full rounded-2xl overflow-hidden;
+        img{
+            @apply w-full h-full object-cover max-xl:w-[300px] mx-auto
+        }
+    }
+
+    &__info {
+        @apply w-full;
+        h1{
+            @apply font-['Fraunces'] text-[#242F65] dark:text-amber-50 xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl mb-7;
+        }
+        p{
+            @apply font-['Fraunces'] text-[#242F65] dark:text-amber-50 xl:text-2xl md:text-xl text-lg mb-11;
+
+            strong{
+                @apply text-[#FF774C] underline;
+            }
+        }
+    }
+
+    &__buttons {
+        @apply md:flex items-center;
+        button{
+            @apply bg-black dark:bg-amber-50 dark:text-black text-xl xl:mr-11 md:mr-8 mr-4 max-md:mb-8;
+            svg{
+                @apply ml-2 text-xl
+            }
+        }
+
+        ul{
+            @apply flex items-center;
+            li{
+                @apply xl:mr-11 md:mr-8 mr-4 last:mr-0;
+                a{
+                    @apply md:text-xl text-base text-[#242F65] dark:text-amber-50 underline font-['Fraunces'];
+                }
+            }
+        }
+    }
+}

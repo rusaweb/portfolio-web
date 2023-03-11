@@ -1,0 +1,48 @@
+.inner-page__project-details{
+    @apply lg:mb-28 md:mb-12 mb-8;
+    &__image{
+        @apply w-full grid grid-cols-[1fr_205px] gap-4 lg:mb-32 md:mb-12 mb-8 shadow-xl rounded-2xl overflow-hidden;
+        .details__image{
+            @apply first:row-start-1 first:row-end-6 shadow-lg;
+        }
+        img{
+            @apply cursor-pointer  w-full h-full object-cover
+        }
+    }
+    &__row{
+        @apply grid lg:grid-cols-2 gap-6;
+        h2{
+            @apply text-3xl font-semibold font-['Fraunces'] text-[#242F65] dark:text-amber-50 mb-5;
+        }
+    }
+    &__summary{
+        @apply static;
+        p{
+            @apply text-xl font-medium; 
+        }
+        .tags{
+            @apply flex flex-wrap gap-2.5 mt-8;
+            a{
+                @apply px-4 py-2 transition-all border border-[#7390F9] font-medium rounded-md inline-block cursor-pointer text-[#7390F9];
+                &:hover {
+                    @apply bg-blue-200 text-blue-500;
+                }
+            }
+        }
+    }
+    &__details{
+        @apply static;
+        ul{
+            @apply lg:p-12 sm:p-8 p-4 bg-[#F5F5F5] dark:bg-[#242F65] rounded-3xl grid gap-6;
+            span{
+                @apply font-['Fraunces'] text-[#242F65] dark:text-amber-50 text-xl font-semibold block mb-3;    
+            }
+            p{
+                @apply text-lg font-medium;
+            }
+            a{
+                @apply block text-lg font-bold text-[#7390F9] underline;
+            }
+        }
+    }
+}

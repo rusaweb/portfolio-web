@@ -1,0 +1,28 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^3.2.0",
+    "@nuxtjs/i18n": "^8.0.0-beta.7",
+    "@nuxtjs/strapi": "^1.8.1",
+    "@nuxtjs/tailwindcss": "^6.1.3",
+    "@vueuse/core": "^9.6.0",
+    "@vueuse/nuxt": "^9.6.0",
+    "nuxt": "^3.2.3",
+    "nuxt-icon": "^0.1.8",
+    "sass": "^1.58.3"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "vue-easy-lightbox": "^1.14.0",
+    "vue3-marquee-slider": "^1.0.3"
+  }
+}

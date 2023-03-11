@@ -1,0 +1,17 @@
+.dropdown{
+    @apply relative;
+    &__content{
+        @apply hidden z-10 w-full absolute bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700;
+        &.active{
+            @apply block;
+        }
+        ul{
+            @apply py-1 text-sm text-gray-700 dark:text-gray-200;
+            li{
+                a{
+                    @apply block py-2 px-4 dark:text-amber-50 dark:text-amber-50 text-[#2F2F2F] text-lg hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white;
+                }
+            }
+        }
+    }
+}

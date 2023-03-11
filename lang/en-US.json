@@ -1,0 +1,34 @@
+{
+    "navbar": {
+        "link_1": "Home",
+        "link_2": "Work",
+        "link_3": "Me",
+        "link_4": "Blog"
+    },
+    "color_mode": {
+        "item_1": "Dark",
+        "item_2": "Light",
+        "item_3": "System"
+    },
+    "first_screen": {
+        "title": "Hey, I'm Ruslan!",
+        "subtitle": "a <strong>Front-end developer</strong> <br> with ",
+        "years": " years experience"
+    },
+    "work": "WORK",
+    "about": {
+        "title":"About me",
+        "content": "I am a <strong>Front-end developer</strong>. Over the past 5+ years, I've been building quality web applications by connecting business goals with user needs. Developed Lending, CRM, ORM, market place <br> <br> Currently I am a <strong>team leader</strong>, I organize the work of the team taking into account the interests and priorities of the customer. <br> <br> I ensure that the product meets the interests of the business, monitor the effectiveness of the team in the context of business processes <br> <br> Previously worked in <strong><a href='https://credo-studio.com/' target ='_blank'>Credo studio</a></strong>, <strong><a href='https://www.viento.uz/' target='_blank'>Viento</a></strong> and freelancing"
+    },
+    "services": {
+        "title": "Services"
+    },
+    "testimonials": {
+        "title": "TESTIMONIALS",
+        "subtitle": "What People Are Saying About My Work"
+    },
+    "news": {
+        "title": "RECENT NEWS",
+        "btn": "View Post"
+    }
+}

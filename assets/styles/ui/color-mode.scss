@@ -1,0 +1,9 @@
+.color__mode{
+    @apply max-lg:px-8 max-lg:py-4 max-lg:border-b max-lg:w-full max-lg:mr-auto max-lg:flex;
+    p{
+        @apply lg:hidden mr-4 text-xl text-[#2F2F2F] dark:text-amber-50 cursor-pointer
+    }
+    svg{
+        @apply mr-6 cursor-pointer text-[#242F65] dark:text-amber-50 inline-block;
+    }
+}
