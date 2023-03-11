@@ -6,7 +6,7 @@
         <h2 class="">{{$t('services.title')}}</h2>
       </div>
       <div class="services-section__row">
-        <div class="services-section__cards">
+        <div class="services-section__cards" v-if="data">
           <ServicesCard 
             v-for="item in data.data" 
             :key="item.id" 

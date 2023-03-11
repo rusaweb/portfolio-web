@@ -5,7 +5,7 @@
         <Icon name="emojione:pencil" />
         <h2>{{ $t('work') }}</h2>
       </div>
-      <div class="work__cards" v-if="data.data.length">
+      <div class="work__cards" v-if="data?.data.length">
         <WorkCard v-for="(item, key) in data.data" :key="key" :data="item" />
       </div>
     </div>

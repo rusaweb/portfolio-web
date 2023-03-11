@@ -7,7 +7,7 @@
             </div>
             <div class="testimonials-sections__content">
                 <h2>{{ $t('testimonials.subtitle') }}</h2>
-                <div class="testimonials-sections__list">
+                <div class="testimonials-sections__list" v-if="data">
                     <TestimonialsCard v-for="item in data.data" :key="item.id" :data="item"/>
                 </div>
             </div>

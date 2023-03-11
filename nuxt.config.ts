@@ -34,14 +34,8 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: ''
   },
-  vite: {
-    server: {
-      proxy: {
-        "/uploads": {
-          target: "http://localhost:1337/",
-        }
-      }
-    }
-  },
+  strapi: {
+    url: process.env.STRAPI_URL || 'https://portfolio-w6rc.onrender.com',
+  }
 })
 

@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="localePath('/work/' + data.id)" class="work__card" :style="{ background: data.attributes.color_bg }">
+  <nuxt-link v-if="data && data.attributes" :to="localePath('/work/' + data.id)" class="work__card" :style="{ background: data.attributes.color_bg }">
     <svg class="absolute top-0 left-0 lg:w-[147px] lg:h-[130px] lg:block hidden" viewBox="0 0 147 130" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M147 1.52588e-05C147 71.797 88.797 130 17 130L4.60464 130C-3.46128 130 -10 123.461 -10 115.395L-10 1.53341e-06L147 1.52588e-05V1.52588e-05Z" :fill="data.attributes.color_element"/>
     </svg>
@@ -17,7 +17,7 @@
       </h3>
     </div>
     <div class="work__card-image">
-        <img :src="data.attributes.cover.data.attributes.url" alt="">
+        <img :src="data.attributes.cover?.data?.attributes.url" alt="">
     </div>
   </nuxt-link>
 </template>
