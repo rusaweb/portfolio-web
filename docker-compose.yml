@@ -11,3 +11,6 @@ services:
       - STRAPI_URL=https://admin.ruslan-portfolio.com
     networks:
       - net
+
+networks:
+  net:
