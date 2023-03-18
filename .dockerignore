@@ -1,0 +1,9 @@
+.tmp/
+.cash/
+.github/
+.output/
+.nuxt/
+.idea/
+build/
+node_modules/
+data/

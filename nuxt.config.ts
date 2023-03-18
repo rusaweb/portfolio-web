@@ -35,7 +35,7 @@ export default defineNuxtConfig({
     classSuffix: ''
   },
   strapi: {
-    url: process.env.STRAPI_URL || 'https://portfolio-w6rc.onrender.com',
+    url: process.env.STRAPI_URL || 'https://admin.ruslan-portfolio.com',
   }
 })
 
