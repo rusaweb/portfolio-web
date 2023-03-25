@@ -28,7 +28,7 @@
     }
     &__card-btn{
         button{
-            @apply flex items-center text-lg font-bold text-[#242F65];
+            @apply flex items-center text-lg font-bold text-[#242F65] dark:text-white;
             &:hover{
                 svg{
                     @apply rotate-45;

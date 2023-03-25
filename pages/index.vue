@@ -4,7 +4,7 @@
   <AboutSection />
   <ServicesSection />
   <TestimonialsSections />
-  <NewsSections />
+  <!-- <NewsSections /> -->
 </template>
 <script setup>
 import AboutSection from "~/components/pages/home/About.vue";

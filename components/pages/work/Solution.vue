@@ -3,7 +3,7 @@
         <div class="container lg-container">
             <div class="inner-page__solution-content">
                 <div class="inner-page__solution-info">
-                    <h2>Solution
+                    <h2>{{$t("work_page.solution")}}
                         <Icon name="emojione:white-heavy-check-mark" />
                     </h2>
                     <div class="inner-page__solution-text" v-html="data"></div>

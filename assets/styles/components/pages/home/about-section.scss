@@ -20,6 +20,9 @@
   }
   &__image{
     @apply relative;
+    img{
+      @apply rounded-2xl overflow-hidden
+    }
   }
   &__btn{
     @apply lg:w-[240px] w-[180px] lg:h-[240px] h-[180px] absolute bottom-0 right-[14px] translate-y-1/2 bg-[#E8EFF0] rounded-full p-4 dark:bg-[#2c3556];

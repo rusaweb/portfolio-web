@@ -3,7 +3,7 @@
         <div class="container lg-container">
             <div class="inner-page__problem-content">
                 <div class="inner-page__problem-info">
-                    <h2>Problem
+                    <h2>{{$t("work_page.problem")}}
                         <Icon name="emojione:face-screaming-in-fear" />
                     </h2>
                     <div class="tabs">

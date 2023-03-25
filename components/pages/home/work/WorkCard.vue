@@ -13,7 +13,7 @@
       </h3>
       <h3 class="work__card-content">{{data.attributes.ext}}</h3>
       <h3 class="work__card-btn">
-        <button class="btn btn-yellow">Read Case Study <Icon name="mdi:arrow-top-right" /></button>
+        <button class="btn btn-yellow">{{ $t('work_page.btn') }} <Icon name="mdi:arrow-top-right" /></button>
       </h3>
     </div>
     <div class="work__card-image">

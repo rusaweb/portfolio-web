@@ -1,9 +1,9 @@
 .inner-page__project-details{
     @apply lg:mb-28 md:mb-12 mb-8;
     &__image{
-        @apply w-full grid grid-cols-[1fr_205px] gap-4 lg:mb-32 md:mb-12 mb-8 shadow-xl rounded-2xl overflow-hidden;
+        @apply w-full grid md:grid-cols-[1fr_205px] grid-cols-3 md:gap-4 lg:mb-32 md:mb-12 mb-8 md:shadow-xl md:rounded-2xl overflow-hidden md:h-[625px];
         .details__image{
-            @apply first:row-start-1 first:row-end-6 shadow-lg;
+            @apply md:first:row-start-1 md:first:row-end-6 shadow-lg h-full;
         }
         img{
             @apply cursor-pointer  w-full h-full object-cover

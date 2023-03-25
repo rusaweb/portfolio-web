@@ -8,7 +8,7 @@
       <div class="about-section__row">
         <div class="about-section__info" v-html="$t('about.content')"></div>
         <div class="about-section__image">
-          <img src="@/assets/images/avatar/1.png" alt="">
+          <img src="@/assets/images/avatar/11.jpg" alt="">
           <button class="about-section__btn" @click="() => $router.push(localePath('/about'))">
             <img class="btn__down" src="@/assets/images/btn/resume.svg" alt="">
             <img class="btn__scroll-text" src="@/assets/images/btn/resume-text.svg" alt="">

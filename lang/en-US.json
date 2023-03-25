@@ -16,6 +16,20 @@
         "years": " years experience"
     },
     "work": "WORK",
+    "work_page": {
+        "back": "Back To Home",
+        "summary": "Project Summary",
+        "details": "Project Details",
+        "role": "Role",
+        "duration": "Duration",
+        "website": "Website",
+        "visit": "Visit website",
+        "tools": "Tools",
+        "team_member": "Team Member",
+        "problem": "Problem",
+        "solution": "Solution",
+        "btn": "Read more"
+    },
     "about": {
         "title":"About me",
         "content": "I am a <strong>Front-end developer</strong>. Over the past 5+ years, I've been building quality web applications by connecting business goals with user needs. Developed Lending, CRM, ORM, market place <br> <br> Currently I am a <strong>team leader</strong>, I organize the work of the team taking into account the interests and priorities of the customer. <br> <br> I ensure that the product meets the interests of the business, monitor the effectiveness of the team in the context of business processes <br> <br> Previously worked in <strong><a href='https://credo-studio.com/' target ='_blank'>Credo studio</a></strong>, <strong><a href='https://www.viento.uz/' target='_blank'>Viento</a></strong> and freelancing"
@@ -30,5 +44,16 @@
     "news": {
         "title": "RECENT NEWS",
         "btn": "View Post"
+    },
+    "copyright": "Copyright © 2023 Ruslan. All rights reserved.",
+    "footer": {
+        "marquee-slider-1": "Get in Touch",
+        "marquee-slider-2": "Available for Work",
+        "email": "Interested in working together? Drop me a line",
+        "copy": "Copy Email"
+    },
+    "skills": {
+        "features": "Features",
+        "knowledge": "Knowledge"
     }
 }

@@ -2,7 +2,8 @@
     <div class="container lg-container">
         <div class="experience-map">
             <div class="experience-map__list">
-                <ExperienceList v-for="item in data" :key="item.id" :data="item"/>
+                <ExperienceList :data="data.data.attributes.educations" icon="emojione:books" title="Education"/>
+                <ExperienceList :data="data.data.attributes.work_experience" icon="emojione:briefcase" title="Work Experience"/>
             </div>
         </div>
     </div>
@@ -10,53 +11,10 @@
 
 <script setup>
 import ExperienceList from '~/components/pages/about/experience/ExperienceList.vue';
-const data = ref([
-    {
-        lvl: {
-            icon: 'emojione:books',
-            title: 'Education',
-        },
-        informations: [
-            {
-                date: "2013 to 2014",
-                title: "University of California, Berkeley",
-                subtitle: "Graduate of Visual Communication Design.",
-                content: "Lorem Ipsum is simply dummy text of the printing and. Lorem Ipsum has been the industry's standard dummy text unknown printer took a galley centuries,",
-            },
-            {
-                date: "2013 to 2014",
-                title: "University of California, Berkeley",
-                subtitle: "Graduate of Visual Communication Design.",
-                content: "Lorem Ipsum is simply dummy text of the printing and. Lorem Ipsum has been the industry's standard dummy text unknown printer took a galley centuries,",
-            },
-        ]
-    },
-    {
-        lvl: {
-            icon: 'emojione:briefcase',
-            title: 'Work Experience',
-        },
-        informations: [
-            {
-                date: "2022 current",
-                title: "Fraxos",
-                subtitle: "Seniour Design",
-                content: "Lorem Ipsum is simply dummy text of the printing and. Lorem Ipsum has been the industry's standard dummy text unknown printer took a galley centuries,",
-            },
-            {
-                date: "2017 to 2019",
-                title: "Graphic Designer",
-                subtitle: "Branding & Graphic Design",
-                content: "Lorem Ipsum is simply dummy text of the printing and. Lorem Ipsum has been the industry's  text unknown printer took the galley centuries,",
-            },
-            {
-                date: "2015 to 2016",
-                title: "Codesign",
-                subtitle: "Web Manager",
-                content: "Lorem Ipsum is simply dummy text of the printing and. Lorem Ipsum has been the industry.",
-            },
-        ]
-    },
-])
+const { find } = useStrapi()
+const {locale} = useI18n()
+const { data, pending, refresh, error } = await useAsyncData(
+  'education', () => find('education', {populate: ['educations', 'work_experience'], locale: locale.value})
+)
 defineComponent({ name: "ExperienceMap" })
 </script>

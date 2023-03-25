@@ -2,7 +2,7 @@
   <section class="inner-page__team-member">
     <div class="container lg-container">
       <div class="inner-page__team-member__content">
-        <h2>Team Member</h2>
+        <h2>{{$t("work_page.team_member")}}</h2>
         <div class="inner-page__team-member__list">
           <div v-for="(item, key) in data" :key="key" class="inner-page__team-member__item">
             <div class="member-item__image">

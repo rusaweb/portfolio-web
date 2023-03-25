@@ -4,9 +4,9 @@
     }
 
     &__image {
-        @apply xl:mr-12 max-xl:mb-12 xl:max-w-[500px] max-w-full bg-gradient-to-br from-[#cacfd3] to-[#adaeb3] w-full rounded-2xl overflow-hidden;
+        @apply xl:mr-12 max-xl:mb-12 xl:max-w-[500px] max-w-full w-full rounded-2xl overflow-hidden;
         img{
-            @apply w-full h-full object-cover max-xl:w-[300px] mx-auto
+            @apply w-full object-cover mx-auto
         }
     }
 

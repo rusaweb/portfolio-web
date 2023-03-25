@@ -16,6 +16,20 @@
         "years": " yillik tajribaga ega <br> <strong>Front-end dasturchi</strong>"
     },
     "work": "Ishlarim",
+    "work_page": {
+        "back": "Qaytish",
+        "summary": "Loyiha Xulosasi",
+        "details": "Loyiha Tafsilotlari",
+        "role": "Roli",
+        "duration": "Muddati",
+        "website": "Veb-sayt",
+        "visit": "Veb-saytga kirish",
+        "tools": "Asboblar",
+        "team_member": "Jamoa A'zosi",
+        "problem": "Muammo",
+        "solution": "Yechim",
+        "btn": "Batafsil"
+    },
     "about": {
         "title":"Men haqimda",
         "content": "Men <strong>Front-end dasturchi</strong> man. Oxirgi 5+ yil davomida sifatli veb-ilovalarni yaratganman, foydalanuvchi ehtiyojlari bilan biznes maqsadlarini bog'laganman. Lending, CRM, ORM, market place yaratganman <br> <br> Hozirda men <strong>team leader</strong> man, jamoa ishini mijozning manfaatlari va ustuvorliklarini hisobga olgan holda tashkil qilaman. <br> <br> Men mahsulot biznes manfaatlariga javob berishini ta'minlayman, biznes-jarayonlar kontekstida jamoaning samaradorligini nazorat qilaman <br> <br> Ilgari <strong><a href='https://credo-studio.com/' target='_blank'>Credo studio</a></strong>, <strong><a href='https://www.viento.uz/' target='_blank'> Viento</a></strong>va freelanceda da ishlaganman"
@@ -30,5 +44,16 @@
     "news": {
         "title": "oxirgi yangiliklar",
         "btn": "Ko‘rish"
+    },
+    "copyright": "Copyright © 2023 Ruslan. Barcha huquqlar himoyalangan.",
+    "footer": {
+        "marquee-slider-1": "Aloqadaman",
+        "marquee-slider-2": "Ish uchun mavjudman",
+        "email": "Birgalikda ishlashga qiziqdizmi? Menga bir qatorni ezing",
+        "copy": "Email Nusxa olish"
+    },
+    "skills": {
+        "features": "Xususiyatlarim",
+        "knowledge": "Bilimlarim"
     }
 }

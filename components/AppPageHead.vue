@@ -7,7 +7,7 @@
                     name="line-md:arrow-left"
                     size="24" 
                 />
-                Back To Home
+                {{$t('work_page.back')}}
             </span>
             <h1>{{ title }}</h1>
         </div>

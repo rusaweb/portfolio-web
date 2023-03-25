@@ -4,66 +4,30 @@
             <div class="skills__section">
                 <div class="skills__section-item">
                     <h3>
-                        <Icon name="emojione:pushpin" />Features
+                        <Icon name="emojione:pushpin" />{{ $t('skills.features') }}
                     </h3>
                     <ul>
-                        <li>
+                        <li v-for="item in data?.data.attributes.Features" :key="item.id">
                             <Icon name="line-md:circle-to-confirm-circle-transition" />
-                            UX Design Weekly Issue 354
-                        </li>
-                        <li>
-                            <Icon name="line-md:circle-to-confirm-circle-transition" />
-                            Bestfolios 2021
-                        </li>
-                        <li>
-                            <Icon name="line-md:circle-to-confirm-circle-transition" />
-                            Jacobs Institute for Design Innovation
-                        </li>
-                        <li>
-                            <Icon name="line-md:circle-to-confirm-circle-transition" />
-                            UC Berkeley Arts + Design 'Made at Berkeley' 2019 Issue
+                            {{ item.item }}
                         </li>
                     </ul>
                 </div>
                 <div class="skills__section-item">
                     <h3>
-                        <Icon name="emojione:graduation-cap" />Knowledge
+                        <Icon name="emojione:graduation-cap" />{{ $t('skills.knowledge') }}
                     </h3>
                     <div class="skills__section-item__list">
                         <ul>
-                            <li>
+                            <li v-for="item in data?.data.attributes.Knowledge.slice(0, 4)" :key="item.id">
                                 <Icon name="line-md:circle-to-confirm-circle-transition" />
-                                Interface Design
-                            </li>
-                            <li>
-                                <Icon name="line-md:circle-to-confirm-circle-transition" />
-                                Visual Design
-                            </li>
-                            <li>
-                                <Icon name="line-md:circle-to-confirm-circle-transition" />
-                                Interaction Design
-                            </li>
-                            <li>
-                                <Icon name="line-md:circle-to-confirm-circle-transition" />
-                                Product Strategy
+                                {{ item.item }}
                             </li>
                         </ul>
                         <ul>
-                            <li>
+                            <li v-for="item in data?.data.attributes.Knowledge.slice(4)" :key="item.id">
                                 <Icon name="line-md:circle-to-confirm-circle-transition" />
-                                Human-Centered Design
-                            </li>
-                            <li>
-                                <Icon name="line-md:circle-to-confirm-circle-transition" />
-                                User Research
-                            </li>
-                            <li>
-                                <Icon name="line-md:circle-to-confirm-circle-transition" />
-                                Prototyping
-                            </li>
-                            <li>
-                                <Icon name="line-md:circle-to-confirm-circle-transition" />
-                                Usability Testing
+                                {{ item.item }}
                             </li>
                         </ul>
                     </div>
@@ -73,5 +37,10 @@
     </div>
 </template>
 <script setup>
+const { find } = useStrapi()
+const { locale } = useI18n()
+const { data, pending, refresh, error } = await useAsyncData(
+    'skill', () => find('skill', { populate: ['Features', 'Knowledge'], locale: locale.value })
+)
 defineComponent({ name: "SkillsSection" })
 </script>
