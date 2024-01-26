@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxtjs/strapi'
   ],
+  nitro: { preset: "vercel" },
   css: ['~/assets/styles/styles.scss'],
   i18n: {
     locales: [
